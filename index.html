@@ -56,10 +56,10 @@
         <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-white">
             High-precision energy forecasts for solar <span class="text-blue-400">power plants.</span>
         </h1>
-        <p class="text-lg text-slate-200 max-w-2xl mx-auto mb-10">
-            Solar energy is unpredictable because of clouds. Sudden drops from 100MW to 15MW in minutes cause massive financial losses.
-            Inaccurate forecasts lead to €496M in annual fines for energy traders across the EU (2024). 
-            Individual plants can face fines of up to €135K per year.
+        <p class="text-lg text-slate-200 max-w-3xl mx-auto mb-10">
+            Solar energy production is unpredictable because of clouds. Sudden drops from 100MW to 15MW in minutes can cause power plants massive financial losses.
+            Inaccurate forecasts lead to €496M in annual fines for energy traders across the EU (2024)and 
+            individual plants can face fines of up to €135K per year.
         </p>
     </div>
     <div class="absolute bottom-10 right-10 z-20">
@@ -169,7 +169,7 @@
           <span class="text-5xl font-black text-blue-500 group-hover:text-blue-500 transition-colors italic">03</span>
         </div>
         <div class="md:w-3/4">
-          <h3 class="text-xl font-bold mb-2 text-slate-200">For Hybrid Plants</h3>
+          <h3 class="text-xl font-bold mb-2 text-slate-200">For Power Plants</h3>
           <p class="text-slate-200 text-lg leading-relaxed">
             Optimize <span class="text-slate-200 font-bold ">battery dispatch</span> and storage usage.
           </p>
@@ -186,16 +186,30 @@
             <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
                 About <span class="text-yellow-500">Sunmapper</span>
             </h1>
-            <p class="text-lg text-slate-600 max-w-4xl mx-auto">
-                Sunmapper is a research-based project developed at the Technical University of Denmark (DTU). 
-                The startup bridges the gap between solar forecast and camera technologies research and the practical needs of the energy market. 
-                We are currently running a pilot project with European Energy, one of Europe's largest solar operators with over 3GW under management. 
-                "Sunmapper has the potential to improve situational awareness of rapid solar power variability." — Lasse Diness Borup, Energinet. 
-                Our Mission is to provide the "missing link" in solar forecasting that satellites and numerical weather models cannot reach.
-            </p>
-        </div>
+    <p class="text-lg leading-relaxed text-slate-600 mb-12">
+        Sunmapper is a research-based project developed at the <strong>Technical University of Denmark (DTU)</strong>. 
+        The startup bridges the gap between solar forecast and camera technologies research and the practical needs of the energy market. 
+        We are currently running a pilot project with <strong>European Energy</strong>, one of Europe's largest solar operators with over 3GW under management.
+    </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 max-w-5xl mx-auto">
+    <div class="my-16 text-center px-4">
+        <blockquote class="max-w-2xl mx-auto">
+            <p class="text-2xl md:text-2xl italic font-light text-slate-800 leading-tight">
+                "Sunmapper has the potential to improve situational awareness of rapid solar power variability."
+            </p>
+            <footer class="mt-6">
+                <cite class="text-xs font-bold text-yellow-600 not-italic uppercase tracking-[0.2em]">
+                    — Lasse Diness Borup, Energinet
+                </cite>
+            </footer>
+        </blockquote>
+    </div>
+
+    <p class="text-lg leading-relaxed text-slate-600 mt-12">
+        Our Mission is to provide the <span class="text-slate-900 font-medium">missing link</span> in solar forecasting that satellites and numerical weather models cannot reach.
+    </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 max-w-5xl mx-auto my-16">
             
             <div class="group">
                 <div class="overflow-hidden rounded-2xl mb-4 bg-slate-100">
@@ -253,7 +267,7 @@
         // Mobile Menu Toggle
      const navLinks = document.querySelectorAll('.nav-bar');
      const servicesSection = document.querySelector('#services');
-
+     const aboutSection = document.querySelector('#about');
      const observerOptions = {
          root: null, // use the viewport
          threshold: 0, 
@@ -279,6 +293,7 @@
      }, observerOptions);
 
      observer.observe(servicesSection);
+     observer.observe(aboutSection);
 
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
