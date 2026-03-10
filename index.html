@@ -9,37 +9,37 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
-    <link rel="icon" type="image/x-icon" href="images/idea_logo-removebg-preview.png">
-    <link rel="icon" type="image/png" href="images/idea_logo-removebg-preview.png">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body class="bg-slate-50 text-slate-900">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#home" class="flex items-center group">
-            <img src="images/idea_logo-removebg-preview.png" 
-                 alt="Sunmapper Logo" 
-                 class="h-16 md:h-20 w-auto transition-transform group-hover:scale-105">
-            
-            <div class="text-3xl md:text-4xl font-bold tracking-tighter text-yellow-500 -ml-1">
-                Sunmapper
-            </div>
-        </a>
-            
-            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
-                <a href="#home" class="bg-yellow-500 text-white px-5 py-2 rounded-full hover:bg-yellow-300 transition shadow-md">Home</a>
-                <a href="#services" class="bg-yellow-500 text-white px-5 py-2 rounded-full hover:bg-yellow-300 transition shadow-md">Services</a>
-                <a href="#about" class="bg-yellow-500 text-white px-5 py-2 rounded-full hover:bg-yellow-300 transition shadow-md">About</a>
-                <a href="mailto:jkrtho@dtu.dk" class="bg-yellow-500 text-white px-5 py-2 rounded-full hover:bg-yellow-300 transition shadow-md">Contact Us</a>
-            </div>
-
-            <button id="menu-btn" class="md:hidden text-slate-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white/5 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+        
+        <div class="flex-1 flex justify-start">
+            <a href="#home" class="flex items-center space-x-3 group">
+                <img src="images/logo.png" alt="Logo" class="h-10 w-auto transition-transform group-hover:scale-105">
+                <span class="text-2xl font-bold tracking-tight text-yellow-500">
+                    SunMapper
+                </span>
+            </a>
         </div>
 
+        <div class="hidden md:flex items-center justify-center space-x-12">
+            <a href="#home" class="nav-bar text-sm font-medium tracking-widest text-white/90 hover:text-yellow-400 transition-all uppercase">Home</a>
+            <a href="#services" class="nav-bar text-sm font-medium tracking-widest text-white/90 hover:text-yellow-400 transition-all uppercase">Services</a>
+            <a href="#value" class="nav-bar text-sm font-medium tracking-widest text-white/90 hover:text-yellow-400 transition-all uppercase">Value</a> 
+            <a href="#about" class="nav-bar text-sm font-medium tracking-widest text-white/90 hover:text-yellow-400 transition-all uppercase">About</a>
+            <a href="mailto:jkrtho@dtu.dk" class="nav-bar text-sm font-medium tracking-widest text-white/90 hover:text-yellow-400 transition-all uppercase">Contact</a>
+        </div>
+
+        <div class="flex-1 hidden md:flex"></div>
+        
+        <button class="md:hidden text-white/80">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+        </button>
+    </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4">
             <a href="#home" class="block text-slate-600">Home</a>
             <a href="#services" class="block text-slate-600">Services</a>
@@ -47,7 +47,7 @@
         </div>
     </nav>
 
-    <section id="home" class="relative pt-32 pb-20 px-6 min-h-[80vh] flex items-center bg-cover bg-center bg-no-repeat" 
+    <section id="home" class="relative pt-32 pb-20 px-6 min-h-[100vh] flex items-center bg-cover bg-center bg-no-repeat" 
     style="background-image: url('images/elg21-sky-5534319_1920.jpg');">
     
     <div class="absolute inset-0 bg-slate-900/60"></div>
@@ -61,6 +61,15 @@
             Inaccurate forecasts lead to €496M in annual fines for energy traders across the EU (2024). 
             Individual plants can face fines of up to €135K per year.
         </p>
+    </div>
+    <div class="absolute bottom-10 right-10 z-20">
+        <a href="mailto:jkrtho@dtu.dk" 
+           class="group flex items-center space-x-3 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-full text-white font-medium hover:bg-yellow-500 hover:border-yellow-500 transition-all duration-300 shadow-xl">
+            <span>Contact Us</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+        </a>
     </div>
 </section>
 
@@ -94,11 +103,11 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-12">
-            <div class="px-10">
-                <img src="images/Picture3.png" alt="Resolution comparison" class="w-full h-60 md:h-96 object-cover rounded-2xl shadow-lg border border-slate-100">
+            <div class="px-6">
+                <img src="images/Picture3.png" alt="Resolution comparison" class="w-full h-80 md:h-80 object-cover rounded-2xl shadow-lg border border-slate-100">
             </div>
             <div class="px-6">
-                <img src="images/Picture1.png" alt="API Forecast Chart" class="w-full h-88 object-cover rounded-2xl shadow-sm">
+                <img src="images/Picture1.png" alt="API Forecast Chart" class="w-full h-80 object-cover rounded-2xl shadow-sm">
             </div>
             <div class="px-6">
                 <img src="images/Picture2.png" alt="Camera system 15s capture" class="w-full h-80 object-cover rounded-2xl shadow-sm">
@@ -111,7 +120,7 @@
    
 </section>
 
-<section class="relative py-20 px-6 overflow-hidden min-h-screen flex flex-col justify-center">
+<section id="value" class="relative py-20 px-6 overflow-hidden min-h-screen flex flex-col justify-center">
   
   <div class="absolute inset-0 z-0">
     <img src="images/elg21-sky-5534319_1920.jpg" 
@@ -131,38 +140,38 @@
 
     <div class="max-w-5xl mx-auto space-y-6">
       
-      <div class="group flex flex-col md:flex-row items-center p-8 rounded-3xl bg-white/50 backdrop-blur-md shadow-xl shadow-blue-500/5 hover:shadow-yellow-500/10 transition-all duration-300">
+      <div class="group flex flex-col md:flex-row items-center p-8 rounded-3xl bg-white/20 backdrop-blur-md shadow-xl shadow-blue-500/5 hover:shadow-yellow-500/10 transition-all duration-300">
         <div class="md:w-1/4 mb-4 md:mb-0">
-          <span class="text-5xl font-black text-yellow-600/80 group-hover:text-yellow-600/80 transition-colors italic">01</span>
+          <span class="text-5xl font-black text-blue-500 group-hover:text-blue-500 transition-colors italic">01</span>
         </div>
         <div class="md:w-3/4">
-          <h3 class="text-xl font-bold mb-2 text-slate-700">For Operators</h3>
-          <p class="text-slate-700 text-lg leading-relaxed">
-            Increase energy yield by <span class="text-slate-700font-bold ">1.5%</span> through optimized plant operation.
+          <h3 class="text-xl font-bold mb-2 text-slate-200">For Operators</h3>
+          <p class="text-slate-200 text-lg leading-relaxed">
+            Increase energy yield by <span class="text-slate-200 font-bold ">1.5%</span> through optimized plant operation.
           </p>
         </div>
       </div>
 
-      <div class="group flex flex-col md:flex-row items-center p-8 rounded-3xl bg-white/50 backdrop-blur-md  shadow-xl shadow-blue-500/5 hover:shadow-yellow-500/10 transition-all duration-300">
+      <div class="group flex flex-col md:flex-row items-center p-8 rounded-3xl bg-white/20 backdrop-blur-md  shadow-xl shadow-blue-500/5 hover:shadow-yellow-500/10 transition-all duration-300">
         <div class="md:w-1/4 mb-4 md:mb-0">
-          <span class="text-5xl font-black text-yellow-600/80 group-hover:text-yellow-600/80 transition-colors italic">02</span>
+          <span class="text-5xl font-black text-blue-500 group-hover:text-blue-500 transition-colors italic">02</span>
         </div>
         <div class="md:w-3/4">
-          <h3 class="text-xl font-bold mb-2 text-slate-700">For Traders</h3>
-          <p class="text-slate-700 text-lg leading-relaxed">
-            Drastically reduce <span class="text-slate-700 font-bold">imbalance fees</span> by bidding more accurately on intraday markets.
+          <h3 class="text-xl font-bold mb-2 text-slate-200">For Traders</h3>
+          <p class="text-slate-200 text-lg leading-relaxed">
+            Drastically reduce <span class="text-slate-200 font-bold">imbalance fees</span> by bidding more accurately on intraday markets.
           </p>
         </div>
       </div>
 
-      <div class="group flex flex-col md:flex-row items-center p-8 rounded-3xl bg-white/50 backdrop-blur-md  shadow-xl shadow-blue-500/5 hover:shadow-yellow-500/10 transition-all duration-300">
+      <div class="group flex flex-col md:flex-row items-center p-8 rounded-3xl bg-white/20 backdrop-blur-md  shadow-xl shadow-blue-500/5 hover:shadow-yellow-500/10 transition-all duration-300">
         <div class="md:w-1/4 mb-4 md:mb-0">
-          <span class="text-5xl font-black text-yellow-600/80 group-hover:text-yellow-600/80 transition-colors italic">03</span>
+          <span class="text-5xl font-black text-blue-500 group-hover:text-blue-500 transition-colors italic">03</span>
         </div>
         <div class="md:w-3/4">
-          <h3 class="text-xl font-bold mb-2 text-slate-700">For Hybrid Plants</h3>
-          <p class="text-slate-700 text-lg leading-relaxed">
-            Optimize <span class="text-slate-700 font-bold ">battery dispatch</span> and storage usage.
+          <h3 class="text-xl font-bold mb-2 text-slate-200">For Hybrid Plants</h3>
+          <p class="text-slate-200 text-lg leading-relaxed">
+            Optimize <span class="text-slate-200 font-bold ">battery dispatch</span> and storage usage.
           </p>
         </div>
       </div>
@@ -242,6 +251,35 @@
 
     <script>
         // Mobile Menu Toggle
+     const navLinks = document.querySelectorAll('.nav-bar');
+     const servicesSection = document.querySelector('#services');
+
+     const observerOptions = {
+         root: null, // use the viewport
+         threshold: 0, 
+         rootMargin: "-80px 0px -90% 0px" // Triggers when section hits the navbar
+     };
+
+     const observer = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+             if (entry.isIntersecting) {
+                 // WE ARE IN SERVICES: Change text to dark (or any color)
+                 navLinks.forEach(link => {
+                     link.classList.remove('text-white/90');
+                     link.classList.add('text-slate-900'); // Or 'text-orange-600'
+                 });
+             } else {
+                 // WE LEFT SERVICES: Change text back to light
+                 navLinks.forEach(link => {
+                     link.classList.remove('text-slate-900');
+                     link.classList.add('text-white/90');
+                 });
+             }
+         });
+     }, observerOptions);
+
+     observer.observe(servicesSection);
+
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -250,12 +288,13 @@
         });
 
         // Close menu when a link is clicked
-        const navLinks = mobileMenu.querySelectorAll('a');
-        navLinks.forEach(link => {
+        const navLinksMobile = mobileMenu.querySelectorAll('a');
+        navLinksMobile.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
-    </script>
+
+</script>
 </body>
 </html>
